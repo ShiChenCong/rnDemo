@@ -5,18 +5,19 @@ import Index from '../containers/index';
 import BuyCar from '../containers/buy-car';
 import Ask from '../containers/ask';
 import Personal from '../containers/personal';
-// import Search from '../component/search'
+import Search from '../component/search'
 
-// const IndexPage = createStackNavigator({
-//   Index,
-//   Search
-// }, {
-//     mode: 'modal',
-//     headerMode: 'none',
-//   })
+const IndexPage = createStackNavigator({
+  Index,
+  Search
+}, {
+    mode: 'modal',
+    headerMode: 'none',
+    headerTransitionPreset: 'uikit'
+  })
 
 export default createBottomTabNavigator({
-  index: Index,
+  index: IndexPage,
   buycar: BuyCar,
   ask: Ask,
   personal: Personal

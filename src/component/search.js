@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, Dimensions, Platform, StyleSheet, View, TouchableHighlight, FlatList } from 'react-native';
+import { Text, Dimensions, Platform, StyleSheet, View, TouchableOpacity, FlatList } from 'react-native';
 import { SearchInput, Button } from 'teaset';
 
 export default class Search extends Component {
@@ -34,9 +34,9 @@ export default class Search extends Component {
             placeholder='请输入车型名称 例如: 奥迪A4L'
             onSubmitEditing={(e) => { console.log(e.target); }}
           />
-          <TouchableHighlight style={{ width: '15%' }} onPress={() => this.props.navigation.goBack()}>
+          <TouchableOpacity style={{ width: '15%' }} onPress={() => this.props.navigation.goBack()}>
             <Text>取消</Text>
-          </TouchableHighlight>
+          </TouchableOpacity>
         </View>
         <Text style={styles.title}>为您推荐:</Text>
         <View style={styles.recommend}>

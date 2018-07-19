@@ -6,17 +6,7 @@ import { Button } from 'teaset';
 
 export default class Index extends Component {
   static navigationOptions = {
-    title: '首页',
-    // headerStyle: {
-    //   backgroundColor: '#f4511e',
-    // },
-    // headerStyle: {
-    //   backgroundColor: '#f4511e',
-    // },
-    // headerTintColor: '#fff',
-    // headerTitleStyle: {
-    //   fontWeight: 'bold',
-    // },
+    title: '首页'
   }
 
   constructor() {
@@ -46,7 +36,7 @@ export default class Index extends Component {
 
   render() {
     return (
-      <ScrollView style={{ flex: 1 }}>
+      <ScrollView style={{ height: '100%' }}>
         <IndexBanner navigation={this.props.navigation} />
         <View style={styles.brandConinater}>
           {this.getBrands()}

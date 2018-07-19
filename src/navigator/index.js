@@ -13,8 +13,11 @@ const IndexPage = createStackNavigator({
 }, {
     mode: 'modal',
     headerMode: 'none',
-    headerTransitionPreset: 'uikit'
   })
+
+IndexPage.navigationOptions = {
+  title: '首页',
+};
 
 export default createBottomTabNavigator({
   index: IndexPage,

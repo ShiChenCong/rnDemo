@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
   },
   icon: {
     alignSelf: 'flex-end',
-    marginTop: 25,
+    marginTop: 35,
     marginRight: 20,
   },
   button: {
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
   title: {
     alignSelf: 'center',
     marginBottom: 120,
-    marginTop: 18,
+    marginTop: 8,
     color: '#fff',
     fontSize: 25,
     fontWeight: '700'
